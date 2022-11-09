@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://surveyswithgames.com/app/assets/tabletpreview/index4.html -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #f1f1f1;
+    }
+
+    /* The device with borders */
+    .tablet {
+      position: relative;
+      margin: auto;
+      background-color: #000000;
+      border: 2vw #111 solid;
+      border-top-width: 5vh;
+      border-bottom-width: 7.5vh;
+      border-radius: 2vh;
+      border-bottom-right-radius: 4vh;
+      border-bottom-left-radius: 4vh;
+      transform: translateY(calc((100vh * 0.5625)/9));
+    }
+
+    /* The horizontal line on the top of the device */
+    .tablet:after {
+      content: '';
+      display: block;
+      width: 10%;
+      height: 2%;
+      position: absolute;
+      bottom: -5vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 1vh;
+    }
+
+    .tablet .leftspkr:after {
+      content: '';
+      display: block;
+      width: 20%;
+      height: 4%;
+      position: absolute;
+      left: 15%;
+      bottom: -5.5vh;
+      transform: translate(-50%, -50%);
+      border-radius: 1vw;
+      background: #222;
+      background-size: calc(16vw/10) calc(9vh/10);
+      background-image: linear-gradient(45deg, transparent 4%, rgba(255, 255, 255, .15) 5%, rgba(255, 255, 255, .15) 6%, transparent 7%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent), linear-gradient(125deg, transparent 24%, rgba(255, 255, 255, .15) 25%, rgba(255, 255, 255, .15) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent);
+    }
+
+    .tablet .rightspkr:after {
+      content: '';
+      content: '';
+      display: block;
+      width: 20%;
+      height: 4%;
+      position: absolute;
+      left: 85%;
+      bottom: -5.5vh;
+      transform: translate(-50%, -50%);
+      border-radius: 1vw;
+      background: #222;
+      background-size: calc(16vw/10) calc(9vh/10);
+      background-image: linear-gradient(45deg, transparent 4%, rgba(255, 255, 255, .15) 5%, rgba(255, 255, 255, .15) 6%, transparent 7%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent), linear-gradient(125deg, transparent 24%, rgba(255, 255, 255, .15) 25%, rgba(255, 255, 255, .15) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent);
+    }
+
+    /* The screen (or content) of the device */
+    .tablet .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+
+    .tablet .content .container {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+
+    }
+
+    .container-sixteennine {
+      max-width: calc(75vh * 1.77);
+      margin: auto;
+    }
+
+
+    .tablet:before {
+      content: '';
+      display: block;
+      width: 2%;
+      height: 2%;
+      position: absolute;
+      left: 50%;
+      top: -3%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      border-radius: 50%;
+    }
+
+    .tablet .leftspkr:before {
+      content: '';
+      display: block;
+      transform: translate(-50%, -50%);
+      background: black;
+      position: absolute;
+      border-radius: 100%;
+      width: 1%;
+      height: 1%;
+      top: -3%;
+      left: 47%;
+    }
+
+    .tablet .rightspkr:before {
+      content: '';
+      display: block;
+      transform: translate(-50%, -50%);
+      background: black;
+      position: absolute;
+      border-radius: 100%;
+      width: 1%;
+      height: 1%;
+      top: -3%;
+      left: 53%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- style="transform: translateY(calc((50vh * 16 / 9 - 50vh) / 2));" -->
+  <div class="container-sixteennine">
+    <div class="tablet">
+
+      <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%209%22%20width%3D%2216%22%20height%3D%229%22%2F%3E"
+        style="width: 100%;display: block;">
+      <div class="content">
+        <div class="container" style="overflow: hidden;height: 100%;width: 100%;">
+          <iframe width="100%" height="100%" src="wheel.html" style="border: 0"></iframe>
+        </div>
+      </div>
+
+      <span class="spkr leftspkr"></span>
+      <span class="spkr rightspkr"></span>
+    </div>
+  </div>
+  <!--
+
+please refer to the website surveyswithgames.com to get updated source
+You will need to login and generate a survey and game then view the page source and copy needed parts where required.
+
+-->
+
+
+
+</body>
+
+</html>

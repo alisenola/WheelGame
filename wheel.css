@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+body.portrait #left-prizes, body.portrait #right-prizes {
+  align-items: center;
+}
+body.portrait #left-prizes img, body.portrait #right-prizes img {
+  width: 23vh;
+  transform: rotate(-90deg);
+}
+body.portrait #main {
+  transform: rotate(-90deg);
+}
+text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  pointer-events: none;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+#left-prizes, #right-prizes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50vw - 50vh - 20px);
+  height: calc(100vh - 60px);
+}
+#left-prizes img, #right-prizes img {
+  cursor: pointer;
+  width: 80%;
+  height: 18%;
+}
+#controls {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5px;
+  bottom: 3px;
+}
+#controls .power, #controls .switch, #controls .membership {
+  cursor: pointer;
+  margin-bottom: 7px;
+  width: 5vh;
+  height: 5vh;
+}
+#prize {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#prize #main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  height: 100vh;
+}
+#prize #main img {
+  width: 30%;
+}

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="wheel.css">
+
+<body>
+  <div id="container">
+    <img id="bg" src="images/bg_horizontal.jpg" />
+    <div id="left-prizes">
+      <img src="images/defaultprize0.png" onclick="showPrizes(0)" />
+      <img src="images/defaultprize7.png" onclick="showPrizes(7)" />
+      <img src="images/defaultprize6.png" onclick="showPrizes(6)" />
+      <img src="images/defaultprize5.png" onclick="showPrizes(5)" />
+    </div>
+    <div id="main">
+      <canvas id="drawing_canvas"></canvas>
+    </div>
+    <div id="right-prizes">
+      <img src="images/defaultprize4.png" onclick="showPrizes(4)" />
+      <img src="images/defaultprize3.png" onclick="showPrizes(3)" />
+      <img src="images/defaultprize2.png" onclick="showPrizes(2)" />
+      <img src="images/defaultprize1.png" onclick="showPrizes(1)" />
+    </div>
+    <div id="controls">
+      <img class="membership" src="images/leak.svg" />
+      <img id="toggle" class="switch" src="images/rotate_vertical.svg" onclick="switch()" />
+      <img class="power" src="images/power.svg" />
+    </div>
+  </div>
+  <div id="prize">
+    <div id="left-prizes">
+      <img src="images/fw.gif" />
+      <img src="images/fw.gif" />
+      <img src="images/fw.gif" />
+    </div>
+    <div id="main">
+      <img id="center-prize" src="images/defaultprize8.jpg" />
+    </div>
+    <div id="right-prizes">
+      <img src="images/fw.gif" />
+      <img src="images/fw.gif" />
+      <img src="images/fw.gif" />
+    </div>
+    <div id="controls">
+      <img class="membership" src="images/leak.svg" />
+      <img id="toggle" class="switch" src="images/rotate_vertical.svg" onclick="switch()" />
+      <img class="power" src="images/power.svg" />
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p2.js/0.6.0/p2.min.js"></script>
+  <script src="filter.js"></script>
+  <script src="wheel.js"></script>
+</body>
